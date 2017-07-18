@@ -1,0 +1,215 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{sansmathaccent}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{lmodern}
+\usepackage[scale=0.85]{geometry} % Reduce document margins 075
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\pdfmapfile{+sansmathaccent.map}
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Phung} % Your first name
+\familyname{Hoang Van} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Thai Thuy}{Thai Binh}
+\birthday {09 April, 1990}
+\mobile{(+84) 973 836 351}
+\email{phunghv.vnu@gmail.com}
+\homepage{vn.linkedin.com/in/phunghv}{vn.linkedin.com/in/phunghv} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[75pt][0.1pt]{phung} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\cventry{2005--2008}{High School}{Thai Phuc high school}{Thai Thuy--Thai Binh}{}{}  % Arguments not required can be left empty
+\cventry{2008--2011}{Bachelor of Science}{SHEER}{Hanoi University of Science and Technology}{}{}
+\cventry{2011--2015}{Bachelor of Science}{IT}{University of Engineering and Technology}{VNU,HN}{GPA-2.91/4.0}
+
+\section{Masters Thesis}
+\cvitem{Title}{\emph{Research to solve entity linking problem for Vietnamese}}
+\cvitem{Supervisors}{MSc. Diep--Hoang Thi}
+\cvitem{Description}{This thesis presents a system for the recognition and semantic disambiguation of named entities based on information extracted from a large encyclopedic collection from Wikipedia.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Experience}
+\subsection{Working}
+%----------
+\cventry{04.2017--present}{Automotive Instrument Cluster HMI}{}{LG IVI R\&D Center Vietnam} {}
+{\begin{itemize}
+\item Developed ADAS module of HMI Application for vehicle
+  \begin{itemize}
+    \item Language : C++
+    \item Graphic engine: Kanzi
+		\item Duties : Coding
+  \end{itemize}
+\end{itemize}
+}
+
+%----------
+\cventry{10.2016--04.2017}{vSphere Web Client Plugin}{}{Toshiba Software Development Vietnam}{}
+{\begin{itemize}
+\item Developed a plugin to backup or restore for vSphere Web Client
+  \begin{itemize}
+    \item Language : Java, Action Script
+		\item Framework : Spring framework
+    \item Database : PostgreSQL
+		\item Duties : Design, Coding, Testing
+  \end{itemize}
+\end{itemize}
+}
+%----------
+%----------
+\cventry{06.2016--10.2016}{Custom Mesos Framework}{}{Toshiba Software Development Vietnam}{}
+{\begin{itemize}
+\item Developed a Mesos framework to manage HA cluster system.
+  \begin{itemize}
+    \item Language : Java
+    \item OS : Centos 7
+		\item Duties : Design, Coding, Testing
+  \end{itemize}
+\end{itemize}
+}
+%----------
+%----------
+\cventry{06.2015--06.2016}{NAS System Management}{}{Toshiba Software Development Vietnam}{}
+{\begin{itemize}
+\item Developed a system to manage NAS system on Toshiba storage device
+  \begin{itemize}
+    \item Language : C/C++
+    \item OS : Debian 6
+		\item Duties : Design, Coding, Testing
+  \end{itemize}
+\end{itemize}
+}
+%----------
+\subsection{Internship}
+%------------------------------------------------
+\cventry{01.2015--06.2015}{Warehouse Management System}{}{Viettel Software}{}
+{\begin{itemize}
+\item Developed a module management warehouse report.
+  \begin{itemize}
+    \item Language : Java,JSP
+    \item Database : Oracle
+    \item Framework : Struts, Hibernate
+  \end{itemize}
+\end{itemize}
+}
+%------------------------------------------------
+%------------------------------------------------
+
+\cventry{07.2014--10.2014}{OpenAir Application}{}{Appota Corporation}{}
+{\begin{itemize}
+\item Developed a application using AirPlay protocol. It's built on Linux, like any Airport Express help to stream audio from iOS devices such as iPhone, iPad, iPod touch or iTunes software
+\begin{itemize}
+    \item Language : C/C++
+  \end{itemize}
+\end{itemize}}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Programming skills}
+
+\cvitem{Language}{
+	\begin{itemize}
+		\item Advanced: \textsc{Java}, \textsc{C/C++}
+		\item Basic: \textsc{Python}, \textsc{Shell script}, \textsc{JavaScript}, \textsc{PHP}, \textsc{HTML}, \textsc{CSS}
+	\end{itemize}
+}
+\cvitem{Database}{\textsc{MySQL}, \textsc{Oracle}, \textsc{PostgreSQL}}
+\cvitem{Framework}{\textsc{Struts}, \textsc{Hibernate}, \textsc{Spring}}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Advanced}{Ubuntu, CentOS, Microsoft Office, Maven, Ant, Git, SVN}
+\cvitem{Basic}{Adobe Photoshop, Adobe Illustrator}
+%----------------------------------------------------------------------------------------
+%	Strengths and weaknesses session
+%----------------------------------------------------------------------------------------
+
+\section{Strengths and weaknesses}
+\cvitem{Strengths}{
+	\begin{itemize}
+		\item Self study, learn new language or framework fast
+		\item Hard working and work well under high pressure
+	\end{itemize}}
+\cvitem{Weaknesses}{
+	\begin{itemize}
+		\item Communication
+		\item Not good at planning and estimating
+	\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Vietnamese}{Mother tongue}{}
+\cvitemwithcomment{English}{Intermediate}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Movie}{Game}
+\cvlistdoubleitem{Book}{Rock music}
+\cvlistitem{Technology news}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
